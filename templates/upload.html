@@ -1,0 +1,32 @@
+<title>Samyak Assignment</title>
+<h2>Select a file to upload</h2>
+<p>
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+		<ul>
+		{% for message in messages %}
+		  <li>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	  {% endif %}
+	{% endwith %}
+</p>
+{% if filename %}
+
+	<div>
+		<b>Hello</b>
+		<img src="../img/result.png">
+		
+	</div>
+{% endif %}
+<form method="post" action="/" enctype="multipart/form-data">
+    <dl>
+		<p>
+			<b>Image1: </b><input type="file" name="file" autocomplete="off" accept="image/*" required><br>
+			<b>Image2: </b><input type="file" name="file1" autocomplete="off" accept="image/*" required><br>
+		</p>
+    </dl>
+    <p>
+		<input type="submit" value="Submit">
+	</p>
+</form>
