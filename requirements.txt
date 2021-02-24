@@ -1,6 +1,6 @@
 
-unixodbc
-pyodbc==4.0.26
+
+
 alabaster==0.7.12
 asn1crypto==0.24.0
 astroid==2.2.5
