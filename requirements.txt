@@ -210,7 +210,7 @@ QtAwesome==0.5.7
 qtconsole==4.5.1
 QtPy==1.8.0
 queuelib==1.5.0
-rake-nltk==1.0.4
+
 regex==2020.11.13
 requests==2.22.0
 rope==0.14.0
